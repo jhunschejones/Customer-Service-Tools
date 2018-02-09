@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Claim Flow</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <!-- This is overriding some of the bootstrap CSS but I like how it makes the text look -->
+        <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  -->
+        <link rel="stylesheet" href="./style/style.css">
+    </head>
+
+    <body>
+
+        <!-- Navigation bar -->
+        <ul class="nav nav-tabs bg-faded">
+            <li class="nav-item">
+                <a class="nav-link" href="../call_flow/index.html">List Items</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../call_flow/checks.html">Check Boxes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Claim Flow</a>
+            </li>
+        </ul>
+
+
+        <!-- Jumbotron -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-3">Claim Flow</h1>
+                <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p> -->
+            </div>
+        </div>
+
+        <!-- Button Topics -->
+        <div class="button_topics">
+            <button type="button" class="btn btn-primary" role="button" data-html="true" data-toggle="popover" data-trigger="focus" 
+            data-container="body" data-placement="top" data-content="02: Processed <br> 01: Pending <br> 11: Pending <br> 81: PBH <br> 91: Reprocessed <br> 99: Closed">
+                Claim Status
+            </button>
+
+            <button type="button" class="btn btn-primary" role="button" data-html="true" data-toggle="popover" data-trigger="focus" 
+            data-container="body" data-placement="bottom" data-content="Was anything paid? <br> When was the claim paid or denied?">
+                Paid Amount & Date
+            </button>
+        </div>
+
+
+        
+        <!-- Collaping Topics -->
+        <div class="claim_collapse">
+            <div id="accordion" role="tablist" aria-multiselectable="true">
+                
+                <!-- This card expands -->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingOne">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="link_names">
+                            Line Item Details
+                            </a>
+                            <span class="badge badge-pill badge-default">4</span>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false">
+                        <div class="card-block">
+                            
+                            <ul>
+                                <li>Scroll Through Claim Lines:</li>
+                                    <ul class="square">
+                                        <li>Did any lines deny?</li>
+                                        <li>What is the TOS?</li>
+                                        <li>What does the <a tabindex="0" data-toggle="popover" data-trigger="focus" title="CPT Code Ranges" data-html="true" 
+                                            data-content="1-6: Surgery <br /> 7: Radiology <br /> 8: Labs <br /> 9: Professional <br /> 0: Anesthesia" class="text-primary" 
+                                            id="cpt_code_ranges">CPT code range</a> tell you?
+                                        </li>
+                                        <li>Location code?</li>
+                                        <li>Modifiers?</li>
+                                    </ul>
+                                <li>Provider Specialty</li>
+                                <li>Referral or PA Violation</li>
+                                <li>Disallow Explanation</li>
+                                    <ul class="square">
+                                        <li>Is this code an actual denial code?</li>
+                                        <li>Is it a <a href="https://orteams.providence.org/sites/php/kms/Pages/Snapshot.aspx#AZ:tpc=Clinical Editing" target="_blank" class="text-primary">clinical edit</a> denial code?</li>
+                                    </ul>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- This card expands -->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingTwo">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" class="link_names">
+                            Claim Notes
+                            </a>
+                            <span class="badge badge-pill badge-default">2</span>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="card-block">
+                            <ul>
+                                <li>Notes from claims processor?</li>
+                                <li>Research referenced doc ID's, CSI's, and claim #'s</li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- This card expands -->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingThree">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" class="link_names">
+                            Line Totals
+                            </a>
+                            <span class="badge badge-pill badge-default">3</span>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="card-block">
+                            <ul>
+                                <li>Any valid disallow explanations?</li>
+                                <li>Check copay, deductible, coinsurance section</li>
+                                <li>Check total withhold</li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- This card expands -->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingFour">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour" class="link_names">
+                            Disallow Amounts
+                            </a>
+                            <span class="badge badge-pill badge-default">2</span>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+                        <div class="card-block">
+                            <ol>
+                                <li>Scroll through all claim lines</li>
+                                <li>Look for explanation codes</li>
+                            </ol>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- This card expands -->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingFive">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive" class="link_names">
+                            Line Item Pricing
+                            </a>
+                            <span class="badge badge-pill badge-default">1</span>
+                        </h5>
+                    </div>
+                    <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
+                        <div class="card-block">
+                            <ul>
+                                <li>Look at "Service/Rule" to see what benefit applied</li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+          
+                
+
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

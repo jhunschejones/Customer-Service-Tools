@@ -1,0 +1,29 @@
+/* Removes underline from stubborn collapsible headers */
+a, a:hover, a:active {
+    text-decoration: none !important;
+} 
+
+.badge-pill {
+    transform: scale(0.7);
+}
+
+#cpt_code_ranges {
+    color: #038fd2;
+}
+
+.button_topics {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.card-block ol, .card-block ul {
+    margin-left: -1em;
+}
+
+.link_names {
+    margin-right: 5px;
+}
+
+.jumbotron {
+    text-align: left;
+}
