@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- This makes IE open in edge mode -->
         <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -15,15 +16,11 @@
     </head>
 
     <body>
-
         <!-- Navigation bar -->
 
         <ul class="nav nav-tabs bg-faded">
             <li class="nav-item">
-                <a class="nav-link active" href="#">List Items</a>
-            </li>
-            <li class="nav-item">
-                    <a class="nav-link" href="./medicare.html">Medicare</a>
+                <a class="nav-link active" href="#">Medicare</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="./checks.html">ASO/COMM</a>
@@ -32,7 +29,7 @@
                 <a class="nav-link" href="../claim_flow/index.html">Claim Flow</a>
             </li>
         </ul>
-                
+
 
         <!-- Jumbotron -->
         <div class="jumbotron jumbotron-fluid">
@@ -41,43 +38,83 @@
                 <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p> -->
             </div>
         </div>
-
-        <p>This section of the app has been disabled. Use the naviagtion tabs above to jump to the current version of the application. Thank you.</p>
         
 
         <!-- Old Progress Bar -->
         <!-- <div class="w3-light-grey w3-round" id="progress">
-            <div class="w3-container w3-blue w3-round" id="bar" style="width:12%">12%</div>
+            <div class="w3-container w3-blue w3-round" id="bar" style="width:0%">&nbsp;</div>
         </div>
 
         <br> -->
 
         <!-- New Progress Bar -->
-        <!-- <div class="progress" id="progress">
+        <div class="progress" id="progress">
             <div class="progress-bar" id="bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">&nbsp;</div>
         </div>
 
-        <br> -->
+        <br>
 
-        <!-- List Group -->
-        <!-- <div class = "flow_list">
-            <ul class="list-group" id="steps">
-                <li class="list-group-item active">Eligibility</li>
-                <li class="list-group-item">Plan</li>
-                <li class="list-group-item">Provider</li>
-                <li class="list-group-item">Deductible</li>
-                <li class="list-group-item">Copay/Coinsurance</li>
-                <li class="list-group-item">Out of Pocket Max</li>
-                <li class="list-group-item">Limits & Accumulators</li>
-                <li class="list-group-item">Referral & PA Requirements &nbsp;<small>*if applicable</small></li>
-            </ul>
-        </div> -->
+        <!-- Check List -->
+
+        <form id="checks">
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" id="box1">
+                    Eligibility
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" id="box2">
+                    Plan
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" id="box3">
+                    Provider
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" id="box4">
+                    Quote Benefit Disclaimer
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" id="box5">
+                    Copay/Coinsurance
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" id="box6">
+                    Do any Limits apply?
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" id="box7">
+                    Are there any Referral or PA Requirements?
+                </label>
+            </div>
+        </form>
+
+
+        <div class="clear">
+            <button type="submit" class="btn btn-outline-primary" onclick="clearForm()">Clear</button>
+        </div>
+        
+        <div class="instructions">
+            <p><small>Click the check boxes or names of the items in the call flow to sellect.</small></p>
+        </div>
                 
 
         <!-- jQuery first, then Tether, then Bootstrap JS. -->
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-        <script src="./script/script.js"></script>
+        <script src="./scripts/medicare.js"></script>
     </body>
 </html>

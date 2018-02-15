@@ -8,7 +8,7 @@ li {
 }
 
 /* Spaces out the content from the sides of the window */
-#checks {
+#checks, #optional {
     margin-left: 15px;
     margin-right: 15px;
 }

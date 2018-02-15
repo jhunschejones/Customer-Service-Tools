@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Claim Flow</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> This is overriding some of the bootstrap CSS but I like how it looks -->
+        <link rel="stylesheet" href="./style/style.css">
+    </head>
+
+    <body>
+
+        <!-- Navigation bar -->
+
+        <!-- <ul class="nav nav-tabs bg-faded">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">List Items</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./checks.html">Check Boxes</a>
+            </li>
+        </ul> -->
+                
+
+        <!-- Jumbotron -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-3">Claim Flow</h1>
+                <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p> -->
+            </div>
+        </div>
+
+        <!-- Image section -->
+        <div class="screen_shots">
+            <!-- <img src="" alt="" id="screen_shots"> -->
+            <img src="./images/facets.png" alt="" id="screen_shots">
+
+        </div> 
+        
+        <!-- Collaping Topics -->
+        <div class="claim_collapse">
+            <div id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="card">
+
+                    <!-- This card is just a link, does not expand -->
+                    <div class="card-header" role="tab" id="headingOne">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#" aria-expanded="true" aria-controls="collapseOne" onclick="changeImage('./images/status.png')" class="link_names">
+                            Claim Status
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="colapseBlank"></div>
+
+                    <!-- This card is just a link, does not expand -->
+                    <div class="card-header" role="tab" id="headingOne">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#" aria-expanded="true" aria-controls="collapseOne" onclick="changeImage('./images/paid.png')" class="link_names">
+                            Paid Ammount and Paid Date
+                            </a>
+                        </h5>
+                    </div>
+
+                    <!-- This card expands -->
+                    <div class="card-header" role="tab" id="headingOne">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onclick="changeImage('./images/line_item_details.png')" class="link_names">
+                            Line Item Details
+                            </a>
+                            <span class="badge badge-pill badge-default">4</span>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false">
+                        <div class="card-block">
+                            
+                            <ul>
+                                <li>Scroll Through Claim Lines:</li>
+                                    <ul class="square">
+                                        <li>Did any lines deny?</li>
+                                        <li>What is the TOS?</li>
+                                        <li>What does the <a tabindex="0" data-toggle="popover" data-trigger="focus" title="CPT Code Ranges" data-html="true" data-content="1-6: Surgery <br /> 7: Radiology <br /> 8: Labs <br /> 9: Professional <br /> 0: Anesthesia" id="cpt_code_ranges">CPT code range</a> tell you?</li>
+                                        <li>Location code?</li>
+                                        <li>Modifiers?</li>
+                                    </ul>
+                                <li>Provider Specialty</li>
+                                <li>Referral or PA Violation</li>
+                                <li>Disallow Explanation</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- This card is just a link, does not expand -->
+                <div class="card-header" role="tab" id="headingOne">
+                    <h5 class="mb-0">
+                        <a data-toggle="collapsed" data-parent="#accordion" href="#" aria-expanded="true" aria-controls="collapseOne" onclick="changeImage('./images/notes.png')" class="link_names">
+                        Claim Notes
+                        </a>
+                    </h5>
+                </div>
+
+                <!-- This card expands -->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingTwo">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" onclick="changeImage('./images/line_totals.png')">
+                            Line Totals
+                            </a>
+                            <span class="badge badge-pill badge-default">3</span>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="card-block">
+                            <ul>
+                                <li>Total Paid</li>
+                                <li>Total Disallowed</li>
+                                <li>Total Member Responsibility</li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- This card is just a link, does not expand -->
+                <div class="card-header" role="tab" id="headingOne">
+                    <h5 class="mb-0">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#" aria-expanded="true" aria-controls="collapseOne" onclick="changeImage('./images/disallow.png')" class="link_names">
+                        Disallow Amounts
+                        </a>
+                    </h5>
+                </div>
+
+                <!-- This card is just a link, does not expand -->
+                <div class="card-header" role="tab" id="headingOne">
+                    <h5 class="mb-0">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#" aria-expanded="true" aria-controls="collapseOne" onclick="changeImage('./images/pricing.png')" class="link_names">
+                        Line Item Pricing
+                        </a>
+                    </h5>
+                </div>
+
+            </div>
+        </div>
+          
+                
+
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
