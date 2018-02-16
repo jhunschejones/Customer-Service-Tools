@@ -6,4 +6,4 @@ The most challenging yet exciting part of this project was having the opportunit
   
 I want to say a special thanks to my co-workers, and the customer service representatives who tested these applications and provided quality feedback. You guys are all great teammates! 
   
-*Click [here](https://filedn.com/lWYjvlpRciYBP9xzzyqgShB/customer_service_tools/claim_flow/index.html) to demo a live version of the app.*
+*Click [here](https://filedn.com/lWYjvlpRciYBP9xzzyqgShB/Customer-Service-Tools/call_flow/checks.html) to demo a live version of the app.*
