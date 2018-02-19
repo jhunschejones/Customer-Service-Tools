@@ -1,4 +1,4 @@
-# Call Flow 
+# Call Flow Progress 
 
 ## Objective
 I wanted to build a simple browser-based application that a health care customer service representative could use to track their progress through a benefit quote on a phone call.
@@ -10,6 +10,4 @@ After doing some user testing, there was a request to add an 8th list item. I ad
 
 ## Results
 The final application is clean and basic and meets all the requirements set at the start of the project. I was able to get it running in Chrome, so I did my first set of user tests there. After implementing the additional features requested, I was also able to find a head meta tag that would enable me to require Edge mode in IE. This solved my IE compatibility issues on the platforms where I tested. I want to say a special thanks to my coworkers and the users who suggested improvements for this program. You all made this an even more helpful tool for our new team members.
-  
-*See a live version of the app by clicking [here](https://filedn.com/lWYjvlpRciYBP9xzzyqgShB/Customer-Service-Tools/call_flow/checks.html) or return to the [main repository](https://github.com/jhunschejones/Customer-Service-Tools).*
   

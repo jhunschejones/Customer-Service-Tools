@@ -26,4 +26,22 @@ a, a:hover, a:active {
 
 .jumbotron {
     text-align: left;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.my_footer small {
+    color: lightgray;
+}
+
+/* .my_footer {
+    padding: 0px !important;
+    margin: 0px !important;
+} */
+
+hr {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    border-top-style: dotted;
 }

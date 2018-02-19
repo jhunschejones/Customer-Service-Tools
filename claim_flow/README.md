@@ -8,5 +8,3 @@ I used the Bootstrap 4 framework and constructed the heading, buttons, and colla
 
 ## Results
 I am proud of the clean look of this app and some of the small extra features that might not stick out at first glance. I used pop-overs for a couple areas of additional content, and badges to indicate how many bullets of information were under each topic. Future improvements might include adding additional content and pop-overs or links to direct users to additional resources.
-  
-*See a live version of the app by clicking [here](https://filedn.com/lWYjvlpRciYBP9xzzyqgShB/Customer-Service-Tools/claim_flow/index.html) or return to the [main repository](https://github.com/jhunschejones/Customer-Service-Tools).*
