@@ -1,0 +1,14 @@
+button {
+    margin: 3px;
+    display: block;
+}
+
+.my_title {
+    margin-right: 15px;
+}
+
+/* This overrides bootstrap's style for the search input box 
+so that it will display the 'x' in chrome */
+input[type=search]::-webkit-search-cancel-button {
+    -webkit-appearance: searchfield-cancel-button;
+}

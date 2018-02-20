@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Home Base</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <!-- top navbar -->
+        <div class="container top_nav">
+            <form class="form-inline my-2 my-lg-0">
+                <div class="">
+                    <h1 class="my_title">Home Base</h1>
+                </div>
+                <div class="my_search">
+                    <!-- "onkeyup" runs my function every character that is typed, "onsearch" runs function when search is cleared
+                    but "onsearch" is not supported in ie or firefox so i changed to "oninput" -->
+                    <input class="form-control mr-sm-2" type="search" oninput="getInput();" placeholder="Search" id="myInput">
+                    <!-- <button type="button" onclick="getInput()" class="btn btn-outline-success">Search</button> -->
+                </div>
+            </form>
+        </div>
+
+
+        <!-- All the buttons! -->
+        <div class="container" id="buttons">
+            <button type="button" class="btn btn-primary" value="Google Search" onclick="openInNewTab('https://www.google.com/')">Google</button>
+            <button type="button" class="btn btn-primary" value="NPR News" onclick="openInNewTab('https://www.npr.org/')">NPR</button>
+            <button type="button" class="btn btn-primary" value="GitHub" onclick="openInNewTab('https://github.com/')">GitHub</button>
+            <button type="button" class="btn btn-primary" value="Hacker News" onclick="openInNewTab('https://news.ycombinator.com/')">Hacker News</button>
+            <button type="button" class="btn btn-primary" value="MDN Mozilla Documentation JavaScript" onclick="openInNewTab('https://developer.mozilla.org/en-US/');">MDN</button>
+            <button type="button" class="btn btn-primary" value="MSDN Microsoft Documentation" onclick="openInNewTab('https://msdn.microsoft.com/en-us/dn308572.aspx')">MSDN</button>
+            <button type="button" class="btn btn-primary" value="W3 Schools Documentation JavaScript HTML CSS" onclick="openInNewTab('https://www.w3schools.com/')">W3 Schools</button>
+            <button type="button" class="btn btn-primary" value="jQuery API Documentation JavaScript" onclick="openInNewTab('https://api.jquery.com/')">jQuery API</button>
+            <button type="button" class="btn btn-primary" value="JQuery API Documentation JavaScript Cheat Sheet" onclick="openInNewTab('https://oscarotero.com/jquery/')">jQuery Cheet Sheet</button>
+            <button type="button" class="btn btn-primary" value="Ruby API Documentation" onclick="openInNewTab('https://ruby-doc.org/')">Ruby Documentation</button>
+            <button type="button" class="btn btn-primary" value="Bootstrap 4 Documentation CSS HTML JavaScript" onclick="openInNewTab('https://v4-alpha.getbootstrap.com/getting-started/introduction/')">Bootstrap 4</button>
+            <button type="button" class="btn btn-primary" value="Coolors colors CSS Hex" onclick="openInNewTab('https://coolors.co/app')">Coolors</button>
+            <button type="button" class="btn btn-primary" value="Meetups Networking" onclick="openInNewTab('https://www.meetup.com/')">Meetup</button>
+            <button type="button" class="btn btn-primary" value="Ruby on Rails API Documentation" onclick="openInNewTab('http://api.rubyonrails.org/')">Rails Documentation</button>
+            <button type="button" class="btn btn-primary" value="Zed Shaw The Hard Way Ruby SQL C++ Python" onclick="openInNewTab('https://learncodethehardway.org/')">Zed Shaw</button>
+            <!-- <button type="button" class="btn btn-primary" value="" onclick="" >Primary</button> -->
+            <!-- <button type="button" class="btn btn-primary" value="" onclick="" >Primary</button> -->
+            <!-- <button type="button" class="btn btn-primary" value="" onclick="" >Primary</button> -->
+        </div>
+
+
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
