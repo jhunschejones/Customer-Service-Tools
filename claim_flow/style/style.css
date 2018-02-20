@@ -45,3 +45,7 @@ hr {
     margin-bottom: 0px;
     border-top-style: dotted;
 }
+
+.link_names {
+    font-weight: 300 !important;
+}

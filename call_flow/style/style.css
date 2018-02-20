@@ -44,3 +44,8 @@ hr {
     margin-bottom: 0px;
     border-top-style: dotted;
 }
+
+.about_instructions p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
