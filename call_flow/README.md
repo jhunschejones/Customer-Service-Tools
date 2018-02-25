@@ -17,3 +17,5 @@ In this version I also cleaned up the user interface by tightening the margins f
 ## Results
 The final application is clean and basic and meets all the requirements set at the start of the project. I was able to get it running in Chrome, so I did my first set of user tests there. After implementing the additional features requested, I was also able to find a head meta tag that would enable me to require Edge mode in IE. This solved my IE compatibility issues on the platforms where I tested. I want to say a special thanks to my coworkers and the users who suggested improvements for this program. You all made this an even more helpful tool for our new team members.
   
+[Back to Customer Service Tools](https://github.com/jhunschejones/Customer-Service-Tools)
+  
