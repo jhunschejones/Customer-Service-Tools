@@ -18,10 +18,10 @@
         <!-- Navigation bar -->
         <ul class="nav nav-tabs bg-faded">
             <li class="nav-item">
-                <a class="nav-link active" href="#">Internet Explorer</a>
+                <a class="nav-link" href="./index_public.html">Internet Explorer</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./modern_public.html">Modern Browser</a>
+                <a class="nav-link active" href="#">Modern Browser</a>
             </li>
         </ul>
 
@@ -58,7 +58,7 @@
             <button type="button" class="btn btn-primary" value="Meetups Networking" onclick="openInNewTab('https://www.meetup.com/')">Meetup</button>
             <button type="button" class="btn btn-primary" value="Ruby on Rails API Documentation" onclick="openInNewTab('http://api.rubyonrails.org/')">Rails Documentation</button>
             <button type="button" class="btn btn-primary" value="Zed Shaw The Hard Way Ruby SQL C++ Python" onclick="openInNewTab('https://learncodethehardway.org/')">Zed Shaw</button>
-            <button type="button" class="btn btn-primary" value="" onclick="openInNewTab('C:/Users/')">Users (PC)</button>
+            <button type="button" class="btn btn-primary" value="Users folder path" data-toggle="popover" data-placement="top" data-content="Path copied!" onclick="copyToClipboard('C:/Users/')">Users (PC)</button>
             <!-- <button type="button" class="btn btn-primary" value="" onclick="" >Primary</button> -->
             <!-- <button type="button" class="btn btn-primary" value="" onclick="" >Primary</button> -->
         </div>
@@ -67,9 +67,12 @@
         <hr />
         <ul class="nav justify-content-end">
             <li class="nav-item">
+                <a class="nav-link" target="_blank" href="./Using Folder Paths.pdf"><small>Using Folder Paths</small></a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link active" href="mailto:joshua.jones2@providence.org?subject=Home Base Application"><small>Questions & Support</small></a>
             </li>
-        </ul>        
+        </ul>
 
 
         <!-- jQuery first, then Tether, then Bootstrap JS. -->

@@ -1,3 +1,7 @@
+.top_nav {
+    padding-top: 4px;
+}
+
 button {
     margin: 3px;
     display: block;
@@ -11,4 +15,19 @@ button {
 so that it will display the 'x' in chrome */
 input[type=search]::-webkit-search-cancel-button {
     -webkit-appearance: searchfield-cancel-button;
+}
+
+.form-check small, li small {
+    color: lightgray;
+}
+
+hr {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    border-top-style: dotted;
+}
+
+.about_instructions p {
+    margin-left: 10px;
+    margin-right: 10px;
 }

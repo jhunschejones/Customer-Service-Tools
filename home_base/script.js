@@ -36,8 +36,41 @@ function openInNewTab(url) {
     win.focus();
 }
 
-// using this tiny bit of jquery to run my getInput() function when
-// the user clicks on the search box (including when the "x" is clicked)
-// this solves a bug where the 'x' was clicked and the buttons did
-// not repopulate
-$("#myInput").on("click", getInput());
+// used to copy folder path to clipboard for modern browsers
+function copyToClipboard(text) {
+    if (window.clipboardData && window.clipboardData.setData) {
+        // IE specific code path to prevent textarea being shown while dialog is visible.
+        return clipboardData.setData("Text", text); 
+
+    } else if (document.queryCommandSupported && document.queryCommandSupported("copy")) {
+        var textarea = document.createElement("textarea");
+        textarea.textContent = text;
+        textarea.style.position = "fixed";  // Prevent scrolling to bottom of page in MS Edge.
+        document.body.appendChild(textarea);
+        textarea.select();
+        try {
+            return document.execCommand("copy");  // Security exception may be thrown by some browsers.
+        } catch (ex) {
+            console.warn("Copy to clipboard failed.", ex);
+            return false;
+        } finally {
+            document.body.removeChild(textarea);
+        }
+    }
+}
+
+// enable popovers
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+
+// auto-hide pop overs after 3000ms
+$('button').on('shown.bs.popover', function () {
+    var $pop = $(this);
+    setTimeout(function () {
+        $pop.popover('hide');
+    }, 2500);
+    setTimeout(function () {
+        $pop.popover();
+    }, 2700);
+});
