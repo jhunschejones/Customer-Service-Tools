@@ -17,15 +17,13 @@ For example: .includes() JavaScript method and onsearch HTML event that I was us
 To assist in gathering user input I updated the app with a footer for user questions and feedback. The first version of this app takes advantage of IE's decision to ignore some HTTP rules and allow users to open windows explorer windows from a web app. To accommodate modern browsers, I added a second version of the app that instead of trying to access windows explorer will copy the folder path for the user to paste into the "Run" program. I even included a set of instructions in the footer for new users!
 
 ## Results
-The final application feels fun to use and the simple interface turned out even better than I had hoped. Adding the search functionality was a great learning process and it is really a key feature of the application. I am sure the search will only continue to get more useful as we add more links and tools too! I have uploaded a public version of the HTML file with generic links to demonstrate the search and link-open functionality because the original version of the app contains proprietary information. Take a look [here!](https://filedn.com/lWYjvlpRciYBP9xzzyqgShB/Customer-Service-Tools/home_base/index_public.html)
+The final application feels fun to use and the simple interface turned out even better than I had hoped. Adding the search functionality was a great learning process and it is really a key feature of the application. I am sure the search will only continue to get more useful as we add more links and tools too! I have uploaded a public version of the HTML file with generic links to demonstrate the search and link-open functionality because the original version of the app contains proprietary information. Take a look at some screen shots of the production app below and play with the working public version [here!](https://filedn.com/lWYjvlpRciYBP9xzzyqgShB/Customer-Service-Tools/home_base/index_public.html)
   
 [Back to Customer Service Tools](https://github.com/jhunschejones/Customer-Service-Tools)
 
 ### Production App Main Page
 ![](main_page.png)  
-  
 ### Production App Start Typing Search
 ![](search_1.png)  
-  
 ### Production App Continue Typing Search
 ![](search_2.png)  
