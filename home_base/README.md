@@ -20,3 +20,12 @@ To assist in gathering user input I updated the app with a footer for user quest
 The final application feels fun to use and the simple interface turned out even better than I had hoped. Adding the search functionality was a great learning process and it is really a key feature of the application. I am sure the search will only continue to get more useful as we add more links and tools too! I have uploaded a public version of the HTML file with generic links to demonstrate the search and link-open functionality because the original version of the app contains proprietary information. Take a look [here!](https://filedn.com/lWYjvlpRciYBP9xzzyqgShB/Customer-Service-Tools/home_base/index_public.html)
   
 [Back to Customer Service Tools](https://github.com/jhunschejones/Customer-Service-Tools)
+
+### Production App Main Page
+![](main_page.png)  
+  
+### Production App Start Typing Search
+![](search_1.png)  
+  
+### Production App Continue Typing Search
+![](search_2.png)  
