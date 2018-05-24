@@ -1,5 +1,5 @@
-// This is my check to make sure the browser is running my script.js file
-console.log("a custom script is running");
+// This shows in the console that this script is running
+console.log("The home base custom script is running.");
 
 // build an array of all the button elements on the page
 var buttonsList = document.getElementsByTagName("button");

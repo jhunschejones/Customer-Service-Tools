@@ -1,33 +1,31 @@
+/* ----- Header styles ----- */
 .top_nav {
     padding-top: 4px;
-}
-
-button {
-    margin: 3px;
-    display: block;
 }
 
 .my_title {
     margin-right: 15px;
 }
 
-/* This overrides bootstrap's style for the search input box 
-so that it will display the 'x' in chrome */
-input[type=search]::-webkit-search-cancel-button {
-    -webkit-appearance: searchfield-cancel-button;
+	/* This overrides bootstrap's style for the text input
+	 box so that it will display the 'x' in chrome */
+	input[type=search]::-webkit-search-cancel-button {
+		-webkit-appearance: searchfield-cancel-button;
+	}
+
+/* ----- All button styles ----- */
+button {
+    margin: 5px 3px 5px 3px;
+    display: block;
 }
 
-.form-check small, li small {
-    color: lightgray;
-}
-
+/* ----- Footer styles ----- */
 hr {
     margin-top: 25px;
     margin-bottom: 0px;
     border-top-style: dotted;
 }
 
-.about_instructions p {
-    margin-left: 10px;
-    margin-right: 10px;
+li small {
+    color: lightgray;
 }

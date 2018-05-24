@@ -1,0 +1,48 @@
+/* ----- Header Styles ----- */
+.jumbotron {
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+
+/* ----- Main Content Styles ----- */
+a, a:hover, a:active {
+    text-decoration: none !important;
+} 
+
+.badge-pill {
+    transform: scale(0.7);
+}
+
+.button_topics {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+	/* Content Inside of Collapsible Headers */
+	.card-block ol, .card-block ul {
+		margin-left: -1em;
+	}
+
+	.link_names {
+		margin-right: 5px;
+		font-weight: 300 !important;
+	}
+
+	#cpt_code_ranges {
+		color: #038fd2;
+	}
+
+
+/* ----- Footer Styles ----- */
+.my_footer small {
+    color: lightgray;
+}
+
+hr {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    border-top-style: dotted;
+}

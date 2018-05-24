@@ -1,4 +1,4 @@
-console.log("The custom script is running");
+console.log("The custom script for the old call flow page is running.");
 
 // Start: Hilight active list item
 var btnContainer = document.getElementById("steps");

@@ -1,7 +1,6 @@
-console.log("The custom script is running");
+console.log("The custom script for the ASO/COMM call flow page is running.");
 
 // Update progress bar
-
 var all_checks = document.getElementById("checks");
 var count = 0;
 

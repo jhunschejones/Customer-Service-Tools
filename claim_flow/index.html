@@ -11,10 +11,8 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-        <!-- This is overriding some of the bootstrap CSS but I like how it makes the text look -->
-        <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  -->
-        <link rel="stylesheet" href="./style/style.css">
-        <link rel="icon" href="./folder.ico">
+        <link rel="stylesheet" href="./style.css">
+		<link rel="icon" href="./folder.ico">
     </head>
 
     <body>
@@ -31,7 +29,6 @@
                 <a class="nav-link active" href="#">Claim Flow</a>
             </li>
         </ul>
-
 
         <!-- Jumbotron -->
         <div class="jumbotron jumbotron-fluid">
@@ -54,8 +51,7 @@
             </button>
         </div>
 
-
-        
+       
         <!-- Collaping Topics -->
         <div class="claim_collapse">
             <div id="accordion" role="tablist" aria-multiselectable="true">
@@ -71,29 +67,27 @@
                         </h5>
                     </div>
                     <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false">
-                        <div class="card-block">
-                            
+                        <div class="card-block">                         
                             <ul>
                                 <li>Scroll Through Claim Lines:</li>
-                                    <ul class="square">
-                                        <li>Did any lines deny?</li>
-                                        <li>What is the TOS?</li>
-                                        <li>What does the <a tabindex="0" data-toggle="popover" data-trigger="focus" title="CPT Code Ranges" data-html="true" 
-                                            data-content="1-6: Surgery <br /> 7: Radiology <br /> 8: Labs <br /> 9: Professional <br /> 0: Anesthesia" class="text-primary" 
-                                            id="cpt_code_ranges">CPT code range</a> tell you?
-                                        </li>
-                                        <li>Location code?</li>
-                                        <li>Modifiers?</li>
-                                    </ul>
+								<ul class="square">
+									<li>Did any lines deny?</li>
+									<li>What is the TOS?</li>
+									<li>What does the <a tabindex="0" data-toggle="popover" data-trigger="focus" title="CPT Code Ranges" data-html="true" 
+										data-content="1-6: Surgery <br /> 7: Radiology <br /> 8: Labs <br /> 9: Professional <br /> 0: Anesthesia" class="text-primary" 
+										id="cpt_code_ranges">CPT code range</a> tell you?
+									</li>
+									<li>Location code?</li>
+									<li>Modifiers?</li>
+								</ul>
                                 <li>Provider Specialty</li>
                                 <li>Referral or PA Violation</li>
                                 <li>Disallow Explanation</li>
-                                    <ul class="square">
-                                        <li>Is this code an actual denial code?</li>
-                                        <li>Is it a <a href="https://orteams.providence.org/sites/php/kms/Pages/Snapshot.aspx#AZ:tpc=Clinical Editing" target="_blank" class="text-primary">clinical edit</a> denial code?</li>
-                                    </ul>
+								<ul class="square">
+									<li>Is this code an actual denial code?</li>
+									<li>Is it a <a href="https://orteams.providence.org/sites/php/kms/Pages/Snapshot.aspx#AZ:tpc=Clinical Editing" target="_blank" class="text-primary">clinical edit</a> denial code?</li>
+								</ul>
                             </ul>
-
                         </div>
                     </div>
                 </div>
@@ -114,8 +108,6 @@
                                 <li>Notes from claims processor?</li>
                                 <li>Research referenced doc ID's, CSI's, and claim #'s</li>
                             </ul>
-
-
                         </div>
                     </div>
                 </div>
@@ -137,8 +129,6 @@
                                 <li>Check copay, deductible, coinsurance section</li>
                                 <li>Check total withhold</li>
                             </ul>
-
-
                         </div>
                     </div>
                 </div>
@@ -159,8 +149,6 @@
                                 <li>Scroll through all claim lines</li>
                                 <li>Look for explanation codes</li>
                             </ol>
-
-
                         </div>
                     </div>
                 </div>
@@ -180,12 +168,9 @@
                             <ul>
                                 <li>Look at "Service/Rule" to see what benefit applied</li>
                             </ul>
-
-
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
 
@@ -194,20 +179,10 @@
         <div>
             <ul class="nav justify-content-end my_footer">
                 <li class="nav-item">
-                <a class="nav-link active" href="../call_flow/about.html"><small>Questions & Support</small></a>
-                </li>
-                <!-- <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a> -->
+					<a class="nav-link active" href="../call_flow/about.html"><small>Questions & Support</small></a>
                 </li>
             </ul>
         </div>
-          
                 
 
         <!-- jQuery first, then Tether, then Bootstrap JS. -->
